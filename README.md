@@ -1,87 +1,116 @@
 
-# Localify Player 🎵
+# 🎵 Localify Player  
 
-## **Polski / Polish**
+**EN | [PL below](#-localify-player-pl)**  
 
-Localify Player to prosty, lokalny serwer muzyczny w stylu Spotify, który pozwala odtwarzać pliki muzyczne z komputera w przeglądarce.  
-Program umożliwia przeglądanie i odtwarzanie utworów z funkcjami takimi jak shuffle, repeat, regulacja głośności, a także wyświetla metadane utworów (tytuł, wykonawca, album, okładka).
-
-## Funkcje
-- Odtwarzanie lokalnych plików muzycznych (.mp3, .m4a, .wav, .flac, .ogg)  
-- Czytanie metadanych utworów (tytuł, wykonawca, album, okładka)  
-- Przyciski shuffle i repeat  
-- Regulacja głośności i postępu odtwarzania  
-- Możliwość pobierania utworów  
-- Prostey interfejs w przeglądarce  
-
-## Instalacja
-1. Sklonuj repozytorium:
-   ```bash
-   git clone <repo-url>
-   cd <repo-folder>
-2. Zainstaluj wymagane pakiety:
-
-   ```bash
-   pip install flask mutagen Pillow
-   ```
-3. Umieść swoje pliki muzyczne w folderze `music` (program utworzy go automatycznie, jeśli nie istnieje).
-4. Uruchom aplikację:
-
-   ```bash
-   python localify.py (w sumie wystrczy uruchomic z pliku)
-   ```
-5. Otwórz przeglądarkę i wejdź na adres:
-
-   ```
-   http://<TWÓJ_IP>:5000
-   ```
+A simple self-hosted music player inspired by Spotify.  
+It lets you upload and stream local music files on your PC, phone or other devices over the same network.  
+It also supports Discord Rich Presence (RPC), so your friends can see what you’re listening to.
 
 ---
 
-## **English**
+## ✨ Features (EN)
 
-Localify Player is a simple local music server inspired by Spotify, allowing you to play music files from your computer in a browser.
-It supports browsing and playing tracks with features like shuffle, repeat, volume control, and it reads track metadata (title, artist, album, cover).
+- 🎧 Play local music files (`.mp3`, `.m4a`, `.wav`, `.flac`, `.ogg`)  
+- 📱 Access from phone or any device on the same Wi-Fi by typing your PC’s IP  
+- 🖼️ Displays metadata: title, artist, album, cover art  
+- ▶️ Spotify-style UI: play / pause, next / previous, shuffle, repeat  
+- 🔊 Volume slider & progress bar  
+- ⬆️ Upload songs via browser  
+- 🟣 Discord Rich Presence integration – automatic status update  
 
-## Features
+---
 
-* Play local music files (.mp3, .m4a, .wav, .flac, .ogg)
-* Read track metadata (title, artist, album, cover)
-* Shuffle and repeat buttons
-* Volume and progress control
-* Download tracks
-* Simple browser-based interface
+## 🚀 Installation (EN)
 
-## Installation
-
-1. Clone the repository:
-
+1. Clone the repository:  
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
-   ```
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   cd YOUR_REPO
+
+
 2. Install dependencies:
 
    ```bash
-   pip install flask mutagen Pillow
+   pip install flask mutagen Pillow pypresence
    ```
-3. Place your music files in the `music` folder (it will be created automatically if missing).
-4. Run the application:
+3. Create a `music` folder (automatically created on first run).
+4. \[Optional] Create a Discord application at [Discord Developer Portal](https://discord.com/developers/applications) and get your **Client ID**.
+   Put it in the Python script:
+
+   ```python
+   DISCORD_CLIENT_ID = "YOUR_CLIENT_ID"
+   ```
+5. Run the server:
 
    ```bash
-   python localify.py
+   python app.py
    ```
-5. Open your browser and go to:
-
-   ```
-   http://<YOUR_IP>:5000
-   ```
+6. Open in your browser: `http://localhost:5000` or `http://<your_pc_ip>:5000` (for phone).
 
 ---
 
-**Requirements / Wymagania**
+## 📝 Usage (EN)
 
-* Python 3.7+
-* Flask
-* Mutagen
-* Pillow
+* Upload files via the built-in uploader or copy them directly into the `music` folder.
+* Click on a track to play it.
+* Control playback, volume, shuffle and repeat from the web UI.
+* If Discord Rich Presence is configured and Discord is running, your status will update automatically.
+
+# 🎵 Localify Player (PL)
+
+Prosty, samodzielny odtwarzacz muzyki inspirowany Spotify.
+Pozwala przesyłać i odtwarzać pliki muzyczne lokalnie na PC, telefonie lub innych urządzeniach w tej samej sieci.
+Obsługuje również Discord Rich Presence (RPC), dzięki czemu znajomi widzą, czego słuchasz.
+
+---
+
+## ✨ Funkcje (PL)
+
+* 🎧 Odtwarzanie lokalnych plików muzycznych (`.mp3`, `.m4a`, `.wav`, `.flac`, `.ogg`)
+* 📱 Dostęp z telefonu lub dowolnego urządzenia w tej samej sieci Wi-Fi po wpisaniu IP komputera
+* 🖼️ Wyświetlanie metadanych: tytuł, artysta, album, okładka
+* ▶️ Interfejs w stylu Spotify: play / pause, następny / poprzedni, losowe, powtarzanie
+* 🔊 Suwak głośności i pasek postępu
+* ⬆️ Wgrywanie utworów przez przeglądarkę
+* 🟣 Integracja z Discord Rich Presence – automatyczna aktualizacja statusu
+
+---
+
+## 🚀 Instalacja (PL)
+
+1. Sklonuj repozytorium:
+
+   ```bash
+   git clone https://github.com/TWOJ_UZYTKOWNIK/TWOJE_REPO.git
+   cd TWOJE_REPO
+   ```
+2. Zainstaluj zależności:
+
+   ```bash
+   pip install flask mutagen Pillow pypresence
+   ```
+3. Utwórz folder `music` (zostanie też utworzony automatycznie przy pierwszym uruchomieniu).
+4. \[Opcjonalnie] Utwórz aplikację w [Discord Developer Portal](https://discord.com/developers/applications) i pobierz **Client ID**.
+   Wklej je do skryptu Pythona:
+
+   ```python
+   DISCORD_CLIENT_ID = "TWOJE_CLIENT_ID"
+   ```
+5. Uruchom serwer:
+
+   ```bash
+   python app.py
+   ```
+6. Otwórz w przeglądarce: `http://localhost:5000` lub `http://<ip_komputera>:5000` (dla telefonu).
+
+---
+
+## 📝 Użycie (PL)
+
+* Wgraj pliki przez wbudowany uploader lub skopiuj je bezpośrednio do folderu `music`.
+* Kliknij utwór, aby go odtworzyć.
+* Steruj odtwarzaniem, głośnością, losowym trybem i powtarzaniem z poziomu web UI.
+* Jeśli skonfigurujesz Discord Rich Presence i Discord będzie włączony, status zaktualizuje się automatycznie.
+
+---
