@@ -25,7 +25,7 @@ It also supports Discord Rich Presence (RPC), so your friends can see what you�
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+   git clone 
    cd YOUR_REPO
 
 
@@ -44,7 +44,7 @@ It also supports Discord Rich Presence (RPC), so your friends can see what you�
 5. Run the server:
 
    ```bash
-   python app.py
+   python localify.py
    ```
 6. Open in your browser: `http://localhost:5000` or `http://<your_pc_ip>:5000` (for phone).
 
@@ -82,7 +82,7 @@ Obsługuje również Discord Rich Presence (RPC), dzięki czemu znajomi widzą, 
 1. Sklonuj repozytorium:
 
    ```bash
-   git clone https://github.com/TWOJ_UZYTKOWNIK/TWOJE_REPO.git
+   git clone 
    cd TWOJE_REPO
    ```
 2. Zainstaluj zależności:
@@ -100,7 +100,7 @@ Obsługuje również Discord Rich Presence (RPC), dzięki czemu znajomi widzą, 
 5. Uruchom serwer:
 
    ```bash
-   python app.py
+   python localify.py
    ```
 6. Otwórz w przeglądarce: `http://localhost:5000` lub `http://<ip_komputera>:5000` (dla telefonu).
 
