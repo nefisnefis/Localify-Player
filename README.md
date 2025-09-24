@@ -1,7 +1,7 @@
 
 # 🎵 Localify Player  
 
-**EN | [PL below](#-localify-player-pl)**  
+## **EN | [PL below]()**  
 
 A simple self-hosted music player inspired by Spotify.  
 It lets you upload and stream local music files on your PC, phone or other devices over the same network.  
